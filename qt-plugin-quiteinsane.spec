@@ -33,22 +33,19 @@ wiedzieæ o bibliotece SANE ani jej API.
 %patch0 -p1
 
 %build
-# not autoconf configure
-./configure
+qmake quiteinsaneplugin.pro -o Makefile \
+	QMAKE_CXX="%{__cxx}" \
+	QMAKE_LINK="%{__cxx}" \
+	QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}" \
+	QMAKE_RPATH=
+
 %{__make} sub-quiteinsaneplugin \
 	QTDIR=%{_prefix} \
-	CXX="%{__cxx}" \
-	LINK="%{__cxx}" \
-	CXXFLAGS="%{rpmcflags} -pipe -Wall -W -D_REENTRANT -fPIC %{!?debug:-DQT_NO_DEBUG} -DQT_THREAD_SUPPORT" \
 	LFLAGS="%{rpmldflags} -shared -Wl,-soname,libquiteinsane_plugin_mt.so" \
 	TARGET="libquiteinsane_plugin_mt.so"
 
 %{__make} sub-plugintest \
-	QTDIR=%{_prefix} \
-	CXX="%{__cxx}" \
-	LINK="%{__cxx}" \
-	CXXFLAGS="%{rpmcflags} -pipe -Wall -W -D_REENTRANT %{!?debug:-DQT_NO_DEBUG} -DQT_THREAD_SUPPORT" \
-	LFLAGS="%{rpmldflags}"
+	QTDIR=%{_prefix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
