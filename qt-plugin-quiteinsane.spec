@@ -23,7 +23,7 @@ SANE library and it's API.
 
 %description -l pl
 Celem QuiteInsane-Plugin jest dostarczenie frontendu do SANE jako
-wtyczki, któr± mo¿na ³atwo zintegrowaæ w aplikacjê opartn± na Qt.
+wtyczki, któr± mo¿na ³atwo zintegrowaæ w aplikacjê opart± na Qt.
 "£atwo" w tym kontek¶cie oznacza nie wiêcej ni¿ skopiowanie kilku
 linii kodu i uczynienie paru ma³ych modyfikacji. Nie trzeba nic
 wiedzieæ o bibliotece SANE ani jej API.
