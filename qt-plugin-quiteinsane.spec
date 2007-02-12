@@ -1,5 +1,5 @@
 Summary:	QuiteInsane-Plugin - Qt plugin to access scanners
-Summary(pl):	QuiteInsane-Plugin - wtyczka Qt umo¿liwiaj±ca dostêp do skanerów
+Summary(pl.UTF-8):   QuiteInsane-Plugin - wtyczka Qt umoÅ¼liwiajÄ…ca dostÄ™p do skanerÃ³w
 Name:		qt-plugin-quiteinsane
 Version:	0.2
 Release:	1
@@ -21,12 +21,12 @@ assure you, that it's not much more than copying a few lines of code
 and doing some small modifications. You have to know nothing about the
 SANE library and it's API.
 
-%description -l pl
+%description -l pl.UTF-8
 Celem QuiteInsane-Plugin jest dostarczenie frontendu do SANE jako
-wtyczki, któr± mo¿na ³atwo zintegrowaæ w aplikacjê opart± na Qt.
-"£atwo" w tym kontek¶cie oznacza nie wiêcej ni¿ skopiowanie kilku
-linii kodu i uczynienie paru ma³ych modyfikacji. Nie trzeba nic
-wiedzieæ o bibliotece SANE ani jej API.
+wtyczki, ktÃ³rÄ… moÅ¼na Å‚atwo zintegrowaÄ‡ w aplikacjÄ™ opartÄ… na Qt.
+"Åatwo" w tym kontekÅ›cie oznacza nie wiÄ™cej niÅ¼ skopiowanie kilku
+linii kodu i uczynienie paru maÅ‚ych modyfikacji. Nie trzeba nic
+wiedzieÄ‡ o bibliotece SANE ani jej API.
 
 %prep
 %setup -q -n quiteinsane_plugin-%{version}
