@@ -1,5 +1,5 @@
 Summary:	QuiteInsane-Plugin - Qt plugin to access scanners
-Summary(pl.UTF-8):   QuiteInsane-Plugin - wtyczka Qt umożliwiająca dostęp do skanerów
+Summary(pl.UTF-8):	QuiteInsane-Plugin - wtyczka Qt umożliwiająca dostęp do skanerów
 Name:		qt-plugin-quiteinsane
 Version:	0.2
 Release:	1
