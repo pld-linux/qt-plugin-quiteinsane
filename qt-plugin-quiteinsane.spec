@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/quiteinsane/quiteinsane_plugin-%{version}.tar
 # Source0-md5:	f69678402148ada83f7e59938384a2c9
 Patch0:		%{name}-setstyle.patch
 URL:		http://quiteinsane.sourceforge.net/index.shtml
-BuildRequires:	qt-devel >= 3.0
+BuildRequires:	qt-devel >= 1:3.0
 BuildRequires:	sane-backends-devel >= 1.0.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
