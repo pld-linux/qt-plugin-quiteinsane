@@ -30,7 +30,7 @@ wiedzieć o bibliotece SANE ani jej API.
 
 %prep
 %setup -q -n quiteinsane_plugin-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 qmake quiteinsaneplugin.pro -o Makefile \
